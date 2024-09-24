@@ -1,0 +1,53 @@
+<mvc:View controllerName="case3fe.controller.X1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+	<Shell>
+		<App busy="{X1>/busy}" class="sapUiSizeCompact">
+			<pages>
+				<Page title="{i18n>customerPageTitle}">
+					<content>
+						<Table
+							id="customerList"
+							growing="true"
+							growingThreshold="10"
+							items="{
+								path: '/Customers'
+							}">
+							<columns>
+								<Column id="userNameColumn">
+									<Text text="{i18n>customerIDLabelText}"/>
+								</Column>
+								<Column id="firstNameColumn">
+									<Text text="{i18n>companyNameLabelText}"/>
+								</Column>
+								<Column id="lastNameColumn">
+									<Text text="{i18n>contactNameLabelText}"/>
+								</Column>
+								<Column id="ageColumn">
+									<Text text="{i18n>cityLabelText}"/>
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem>
+									<cells>
+										<Input value="{CustomerID}"/>
+									</cells>
+									<cells>
+										<Input value="{CompanyName}"/>
+									</cells>
+									<cells>
+										<Input value="{ContactName}"/>
+									</cells>
+									<cells>
+										<Input value="{City}"/>
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
+
