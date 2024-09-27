@@ -1,7 +1,7 @@
 /*global QUnit*/
 
 sap.ui.define([
-	"case3fe/controller/X1.controller"
+	"case41fe/controller/X1.controller"
 ], function (Controller) {
 	"use strict";
 

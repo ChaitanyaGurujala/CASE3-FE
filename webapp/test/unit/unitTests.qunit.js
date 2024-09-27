@@ -5,7 +5,7 @@ sap.ui.getCore().attachInit(function () {
 	"use strict";
 
 	sap.ui.require([
-		"case3fe/test/unit/AllTests"
+		"case41fe/test/unit/AllTests"
 	], function () {
 		QUnit.start();
 	});

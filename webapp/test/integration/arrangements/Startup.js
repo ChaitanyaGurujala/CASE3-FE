@@ -14,7 +14,7 @@ sap.ui.define([
 			// start the app UI component
 			this.iStartMyUIComponent({
 				componentConfig: {
-					name: "case3fe",
+					name: "case41fe",
 					async: true
 				},
 				hash: oOptions.hash,

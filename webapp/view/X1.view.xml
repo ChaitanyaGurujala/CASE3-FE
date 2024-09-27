@@ -1,4 +1,4 @@
-<mvc:View controllerName="case3fe.controller.X1"
+<mvc:View controllerName="case41fe.controller.X1"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
 	<Shell>
@@ -11,7 +11,7 @@
 							growing="true"
 							growingThreshold="10"
 							items="{
-								path: '/Customers'
+								path: 'northwind>/Customers'
 							}">
 							<columns>
 								<Column id="userNameColumn">
@@ -30,16 +30,16 @@
 							<items>
 								<ColumnListItem>
 									<cells>
-										<Input value="{CustomerID}"/>
+										<Input value="{northwind>CustomerID}"/>
 									</cells>
 									<cells>
-										<Input value="{CompanyName}"/>
+										<Input value="{northwind>CompanyName}"/>
 									</cells>
 									<cells>
-										<Input value="{ContactName}"/>
+										<Input value="{northwind>ContactName}"/>
 									</cells>
 									<cells>
-										<Input value="{City}"/>
+										<Input value="{northwind>City}"/>
 									</cells>
 								</ColumnListItem>
 							</items>

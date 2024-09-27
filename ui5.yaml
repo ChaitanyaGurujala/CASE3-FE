@@ -2,7 +2,7 @@
 
 specVersion: "3.1"
 metadata:
-  name: case3fe
+  name: case41fe
 type: application
 server:
   customMiddleware:
@@ -17,7 +17,10 @@ server:
           url: https://ui5.sap.com
         backend:
           - path: /v2
-            url: https://services.odata.org
+            url: https://services.odata.org/
+            client: '100'
+            destination: Northwind
+            authenticationType: NoAuthentication
     - name: fiori-tools-appreload
       afterMiddleware: compression
       configuration:
@@ -27,5 +30,5 @@ server:
     - name: fiori-tools-preview
       afterMiddleware: fiori-tools-appreload
       configuration:
-        component: case3fe
+        component: case41fe
         ui5Theme: sap_horizon

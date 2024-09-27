@@ -8,7 +8,7 @@
 |**Template Used**<br>simple|
 |**Service Type**<br>OData Url|
 |**Service URL**<br>https://services.odata.org/v2/northwind/northwind.svc/|
-|**Module Name**<br>case3fe|
+|**Module Name**<br>case41fe|
 |**Application Title**<br>App Title|
 |**Namespace**<br>|
 |**UI5 Theme**<br>sap_horizon|
@@ -17,7 +17,7 @@
 |**Enable TypeScript**<br>False|
 |**Add Eslint configuration**<br>False|
 
-## case3fe
+## case41fe
 
 An SAP Fiori application.
 

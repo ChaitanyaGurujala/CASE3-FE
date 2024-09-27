@@ -1,15 +1,13 @@
-# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
-
 specVersion: "3.1"
 metadata:
-  name: case3fe
+  name: case41fe
 type: application
 server:
   customMiddleware:
     - name: fiori-tools-proxy
       afterMiddleware: compression
       configuration:
-        ignoreCertError: false # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
+        ignoreCertError: false
         ui5:
           path:
             - /resources
@@ -17,7 +15,15 @@ server:
           url: https://ui5.sap.com
         backend:
           - path: /v2
-            url: https://services.odata.org
+            url: https://services.odata.org/
+            client: "100"
+            destination: Northwind
+            authenticationType: NoAuthentication
+          - path: /v2
+            url: https://services.odata.org/
+            client: "100"
+            destination: Northwind
+            authenticationType: NoAuthentication
     - name: fiori-tools-appreload
       afterMiddleware: compression
       configuration:
@@ -30,7 +36,7 @@ server:
         mountPath: /
         services:
           - urlPath: /v2/northwind/northwind.svc
-            metadataPath: ./webapp/localService/metadata.xml
-            mockdataPath: ./webapp/localService/data
             generateMockData: true
+            metadataXmlPath: ./webapp/localService/metadata.xml
+            mockdataRootPath: ./webapp/localService/data
         annotations: []

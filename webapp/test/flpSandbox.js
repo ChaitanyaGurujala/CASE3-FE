@@ -40,7 +40,7 @@ sap.ui.define([
 								"tileType": "sap.ushell.ui.tile.StaticTile",
 								"properties": {
 									"title": "App Title",
-									"targetURL": "#case3fe-display"
+									"targetURL": "#case41fe-display"
 								}
 							}]
 						}]
@@ -51,8 +51,8 @@ sap.ui.define([
 				"adapter": {
 					"config": {
 						"inbounds": {
-							"case3fe-display": {
-								"semanticObject": "case3fe",
+							"case41fe-display": {
+								"semanticObject": "case41fe",
 								"action": "display",
 								"description": "An SAP Fiori application.",
 								"title": "App Title",
@@ -61,8 +61,8 @@ sap.ui.define([
 								},
 								"resolutionResult": {
 									"applicationType": "SAPUI5",
-									"additionalInformation": "SAPUI5.Component=case3fe",
-									"url": sap.ui.require.toUrl("case3fe")
+									"additionalInformation": "SAPUI5.Component=case41fe",
+									"url": sap.ui.require.toUrl("case41fe")
 								}
 							}
 						}

@@ -4,7 +4,7 @@ sap.ui.define([
 ], function (Controller, JSONModel) {
 	"use strict";
 
-	return Controller.extend("case3fe.controller.X1", {
+	return Controller.extend("case41fe.controller.X1", {
 
 
 		onInit : function () {

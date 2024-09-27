@@ -2,7 +2,7 @@
 
 specVersion: "3.1"
 metadata:
-  name: case3fe
+  name: case41fe
 type: application
 framework:
   name: SAPUI5
@@ -26,7 +26,15 @@ server:
         ignoreCertError: false # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
         backend:
           - path: /v2
-            url: https://services.odata.org
+            url: https://services.odata.org/
+            client: '100'
+            destination: Northwind
+            authenticationType: NoAuthentication
+          - path: /v2
+            url: https://services.odata.org/
+            client: '100'
+            destination: Northwind
+            authenticationType: NoAuthentication
     - name: sap-fe-mockserver
       beforeMiddleware: csp
       configuration:
@@ -40,5 +48,5 @@ server:
     - name: fiori-tools-preview
       afterMiddleware: fiori-tools-appreload
       configuration:
-        component: case3fe
+        component: case41fe
         ui5Theme: sap_horizon
